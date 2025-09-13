@@ -1,13 +1,21 @@
+import React, { useEffect } from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { TfiRulerAlt2 } from "react-icons/tfi";
 
 export default function About2() {
+    useEffect(() => {
+        Aos.init({ duration: 2000 }); // animation duration = 1000ms
+    }, []);
     return (
         <>
-            <div className="w-full pt-16 pb-16 md:pt-24 lg:pb-28 md:pb-[38vh] flex flex-col items-center bg-pink-50 md:relative">
-                <div className="md:w-[70%] w-[90%]">
+            <div className="w-full pt-16 pb-16 md:pt-24 lg:pb-28 md:pb-[38vh] flex flex-col items-center bg-pink-50 md:relative" >
+                <div className="md:w-[70%] w-[90%]" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
                     <img src="/image/about1.png" alt="" />
-                </div> 
-                <div className="w-[350px] px-5 lg:w-[600px] md:w-[400px] mt-10 md:mt-0 rounded-[16px] flex flex-col text-center items-center md:px-10 justify-center pt-14 bg-white md:absolute md:top-[25%] md:right-[5%] lg:top-[38%] lg:right-[5%]">
+                </div>
+                <div className="w-[350px] px-5 lg:w-[600px] md:w-[400px] mt-10 md:mt-0 rounded-[16px] flex flex-col text-center items-center md:px-10 justify-center pt-14 bg-white md:absolute md:top-[25%] md:right-[5%] lg:top-[38%] lg:right-[5%]" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
                     <TfiRulerAlt2 className="text-[60px] text-center text-red-500" />
                     <div className=" mt-5 pb-16">
                         <h1 className="font-bold text-[25px] md:text-[20px]">More Than Just Clothing</h1>

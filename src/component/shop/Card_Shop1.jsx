@@ -1,8 +1,13 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function Card_Shop1() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 }); // animation duration = 1000ms
+  }, []);
   return (
-    <div className='rounded-md md:rounded-[20px] shadow-lg overflow-hidden '>
+    <div className='rounded-md md:rounded-[20px] shadow-lg overflow-hidden ' data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
       <div className="w-full h-[60%] lg:w-full lg:h-[70%] overflow-hidden ">
         <img
           src="/image/c1.png"

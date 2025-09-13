@@ -13,7 +13,7 @@ import Banner from './Banner'
 
 export default function Main() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Banner/>
       {/* <Contain1/> */}
       <Contain2/>
