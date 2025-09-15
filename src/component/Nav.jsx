@@ -40,7 +40,7 @@ export default function Nav() {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex w-[50%]">
-                    <ul className='w-full h-full flex justify-evenly items-center font-medium text-[15px] cursor-pointer'>
+                    <ul className='w-full h-full flex justify-evenly items-center font-medium md:text-[14px] lg:text-[15px] cursor-pointer'>
                         <li className='hover:text-red-500'><Link to={'/'}>Home</Link></li>
                         <li className='hover:text-red-500'><Link to={'/shop'}>Shop</Link></li>
                         <li className='hover:text-red-500'><Link to={'/blog'}>Blog</Link></li>
